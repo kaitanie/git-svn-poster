@@ -60,6 +60,13 @@ or simulation program source code, or even LaTeX code of a paper or
 thesis. In addition to tracking history, version control tools allow
 one to merge contributions between several authors.
 
+
+
+%%% The following minipage structures are needed to position the figure
+%%% beside the text paragraph.
+%%% For a standard figure environment, see the example below.
+
+\begin{minipage}{6cm}
 CERN has chosen to upgrade their old cenralized CVS version control
 system to another modernized centralized system called Subversion
 (SVN). Unfortunately it does not offer the flexibility of the
@@ -71,19 +78,11 @@ such as Git, over traditional centralized ones is that the distributed
 tools don't need a central server. This allows users to utilize
 version control easily and locally on their own computers without
 heavy support infrastructure.
-
-%%% The following minipage structures are needed to position the figure
-%%% beside the text paragraph.
-%%% For a standard figure environment, see the example below.
-
-%% \begin{minipage}{9cm}
-%% Figures may be included in the submitted files. Here we show how a
-%% figure can be included in a \LaTeX\ file.
-%% \end{minipage}
-%% \hfill
-%% \begin{minipage}{5cm}
-\includegraphics[width=12cm]{history.eps}
-%% \end{minipage}
+\end{minipage}
+ \hfill
+ \begin{minipage}{8cm}
+%\includegraphics[width=12cm]{history.eps}
+\includegraphics[width=8cm]{gitk.eps} \end{minipage}
 
 %%%
 %%% A more typical Figure.
