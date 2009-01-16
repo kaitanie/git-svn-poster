@@ -30,8 +30,6 @@
 \title{USING GIT DISTRIBUTED VERSION CONTROL TOOL TO MANAGE HEP DATA ANALYSIS PROJECT}
 %\title{USING GIT DISTRIBUTED VERSION CONTROL TOOL TO MAINTAIN PHYSICS
 %  CODE AND INTEROPERATE WITH CERN SUBVERSION REPOSITORIES}
-
-
 %%%
 %%% The list of authors; underline the name of the author who is responsible
 %%% for the presentation of the paper.
@@ -51,6 +49,7 @@ $^2$~CEN-Saclay, CEA-IRFU/SPhN, 91 191 Gif sur Yvette, France
 %%%
 %%% Body text begins here.
 %%%
+
 % intro
 Version control allows software developers to keep track of project history in
 a systematic and detailed manner. 
@@ -61,6 +60,20 @@ one to merge contributions between several authors.
 % background
 Recently CERN has chosen to upgrade centralized CVS version control
 system to another modernized centralised system called Subversion
+We present example use case for Git \cite{gitsite}, a distributed version control
+tool developed by Linus Torvalds and the Linux kernel team, together
+with CERN central SVN \cite{cernsvn} version control for high energy physics data
+analysis software maintenance.
+
+Version control allows developers to keep track of project history in
+a systematic and detailed manner. The project can be a data analysis
+or simulation program source code, or even LaTeX code of a paper or
+thesis. In addition to tracking history, version control tools allow
+one to merge contributions between several authors.
+
+CERN has chosen to upgrade their old cenralized CVS version control
+system to another modernized centralized system called Subversion \cite{svnsite}
+
 (SVN). Unfortunately it does not offer the flexibility of the
 distributed systems we are interested in. 
 Git a distributed version control tool \cite{torvalds}, however, 
@@ -117,6 +130,21 @@ Ideal $\tau$-tagging with TMVA multivariate data-analysis toolkit,
 Proceedings of International Conference on 
 Computing in High Energy and Nuclear Physics, CHEP'09,
 (To be published)
+
+
+\bibitem{gitsite}
+\url{http://git.or.cz}{Git website (http://git.or.cz)}
+
+\bibitem{svnsite}
+\href{http://subversion.tigris.org}{Subversion website (http://subversion.tigris.org)}
+
+\bibitem{cernsvn}
+\href{http://cern.ch/svn}{CERN central SVN service (http://cern.ch/svn)}
+
+\bibitem{ref1}
+A. Fyysikko and B. Fyysikko,
+\href{http://link.aps.org/abstract/PR/v108/p1175}{Fysiikan Lehti 108
+(1957) 1175}.
 
 \end{thebibliography}
 
