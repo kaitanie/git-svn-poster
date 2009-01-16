@@ -28,7 +28,6 @@
 %%% The title of the abstract is given here as \title{TITLE TEXT}.
 %%%
 \title{USING GIT DISTRIBUTED VERSION CONTROL TOOL TO MANAGE HEP DATA ANALYSIS PROJECT}
-
 %\title{USING GIT DISTRIBUTED VERSION CONTROL TOOL TO MAINTAIN PHYSICS
 %  CODE AND INTEROPERATE WITH CERN SUBVERSION REPOSITORIES}
 
@@ -37,14 +36,15 @@
 %%% The list of authors; underline the name of the author who is responsible
 %%% for the presentation of the paper.
 %%%
-A. Heikkinen \underline{P. Kaitaniemi}
+\underline{P. Kaitaniemi}$^{1, 2}$ A. Heikkinen$^1$ 
 
 %%%
 %%% The address.
 %%%
-P.O.Box 64 (Gustaf H\"allstr\"omin katu 2), FIN-00014 University of Helsinki, Finland\\
+$^1$~P.O.Box 64 (Gustaf H\"allstr\"omin katu 2), FIN-00014 University of Helsinki, Finland\\
 email: pekka.kaitaniemi@gmail.com
 
+$^2$~CEN-Saclay, CEA-IRFU/SPhN, 91 191 Gif sur Yvette, France
 %%% Do not remove.
 \vspace{\baselineskip}
 
@@ -52,10 +52,10 @@ email: pekka.kaitaniemi@gmail.com
 %%% Body text begins here.
 %%%
 
-We present example use case for Git, a distributed version control
-tool developed by Linus Torvalds and the Linux kernel team, together
-with CERN central SVN version control for high energy physics data
-analysis software maintenance.
+We present example use case for Git, a distributed version control tool \cite{torvalds} 
+%developed by Linus Torvalds and the Linux kernel team, 
+together with CERN central SVN version control for high energy physics data
+analysis software maintenance \cite{pk09aProceedings}.
 
 Version control allows developers to keep track of project history in
 a systematic and detailed manner. The project can be a data analysis
@@ -99,11 +99,16 @@ heavy support infrastructure.
 %%% The bibliography: the references are listed here.
 %%%
 \begin{thebibliography}{9}
+\bibitem{torvalds}
+L.Tovalds with the Linux kernel team,
+Git Version Control System,
+\href{http://git-scm.com/}{http://git-scm.com/}
 
-\bibitem{ref1}
-A. Fyysikko and B. Fyysikko,
-\href{http://link.aps.org/abstract/PR/v108/p1175}{Fysiikan Lehti 108
-(1957) 1175}.
+\bibitem{pk09aProceedings}
+P. Kaitaniemiemi and A. Heikkinen et al.,
+Ideal $\tau$-tagging with TMVA multivariate data-analysis toolkit,
+Tobe published in the Proceedings of International Conference on 
+Computing in High Energy and Nuclear Physics (CHEP'09)
 \end{thebibliography}
 
 \end{document}
