@@ -51,36 +51,36 @@ $^2$~CEN-Saclay, CEA-IRFU/SPhN, 91 191 Gif sur Yvette, France
 %%%
 %%% Body text begins here.
 %%%
-
-We present example use case for Git, a distributed version control tool \cite{torvalds} 
-%developed by Linus Torvalds and the Linux kernel team, 
-together with CERN central SVN version control for high energy physics data
-analysis software maintenance \cite{pk09aProceedings}.
-
+% intro
 Version control allows developers to keep track of project history in
 a systematic and detailed manner. The project can be a data analysis
 or simulation program source code, or even LaTeX code of a paper or
 thesis. In addition to tracking history, version control tools allow
 one to merge contributions between several authors.
-
-
-
-%%% The following minipage structures are needed to position the figure
-%%% beside the text paragraph.
-%%% For a standard figure environment, see the example below.
-
-\begin{minipage}{6cm}
+% background
 CERN has chosen to upgrade their old cenralized CVS version control
 system to another modernized centralized system called Subversion
 (SVN). Unfortunately it does not offer the flexibility of the
 distributed systems. Git can, however, be used as a ``super client''
 with the CERN SVN service.
 
+%%% The following minipage structures are needed to position the figure
+%%% beside the text paragraph.
+%%% For a standard figure environment, see the example below.
+
+\begin{minipage}{6cm}
+% git details
 The most important advantage of distributed version control tools,
 such as Git, over traditional centralized ones is that the distributed
 tools don't need a central server. This allows users to utilize
 version control easily and locally on their own computers without
 heavy support infrastructure.
+% our case and exaple image
+We present example use case for Git, a distributed version control tool \cite{torvalds} 
+%developed by Linus Torvalds and the Linux kernel team, 
+together with CERN central SVN version control for high energy physics data
+analysis software maintenance \cite{pk09aProceedings}.
+
 \end{minipage}
  \hfill
  \begin{minipage}{8cm}
