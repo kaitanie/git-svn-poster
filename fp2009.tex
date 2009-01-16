@@ -59,11 +59,13 @@ a systematic and detailed manner.
 In addition to tracking history, version control tools allow
 one to merge contributions between several authors.
 % background
-CERN has chosen to upgrade their old cenralized CVS version control
-system to another modernized centralized system called Subversion
+Recently CERN has chosen to upgrade centralized CVS version control
+system to another modernized centralised system called Subversion
 (SVN). Unfortunately it does not offer the flexibility of the
-distributed systems. Git can, however, be used as a ``super client''
-with the CERN SVN service.
+distributed systems we are interested in. 
+Git a distributed version control tool \cite{torvalds}, however, 
+provides this flexibility, 
+and can be used as a ``super client'' with the CERN SVN service.
 
 %%% The following minipage structures are needed to position the figure
 %%% beside the text paragraph.
@@ -71,16 +73,16 @@ with the CERN SVN service.
 
 \begin{minipage}{6cm}
 % git details
-The most important advantage of distributed version control tools,
+We discuss the most important advantages of distributed version control tools,
 such as Git, over traditional centralized ones is that the distributed
-tools don't need a central server. This allows users to utilize
+tools don't need a central server and users can utilize
 version control easily and locally on their own computers without
 heavy support infrastructure.
-% our case and exaple image
-We present example use case for Git (Fig.~1), a distributed version control tool \cite{torvalds} 
+% our case and example image
+We present example use case for Git (Fig.~1), 
 %developed by Linus Torvalds and the Linux kernel team, 
 together with CERN central SVN version control for high energy physics data
-analysis software maintenance \cite{pk09aProceedings}.
+analysis software maintenance~\cite{pk09aProceedings}.
 
 
 \end{minipage}
@@ -88,8 +90,8 @@ analysis software maintenance \cite{pk09aProceedings}.
  \begin{minipage}{8cm}
 %\includegraphics[width=12cm]{history.eps}
 \includegraphics[width=8cm]{gitk.eps} 
-{\bf Fig.1}:~Gitk tool showing branchings and merging actions
-performad during the developmet of the software.
+{\bf Fig.1}:~Gitk tool showing branching and merging actions
+performed during the development of the software.
 \end{minipage}
 
 %%%
@@ -105,12 +107,12 @@ performad during the developmet of the software.
 %%%
 \begin{thebibliography}{9}
 \bibitem{torvalds}
-L.Tovalds with the Linux kernel team,
+L.~Tovalds with the Linux kernel team,
 Git Version Control System,
 \href{http://git-scm.com/}{http://git-scm.com/}
 
 \bibitem{pk09aProceedings}
-P. Kaitaniemiemi and A. Heikkinen et al.,
+P.~Kaitaniemiemi and A.~Heikkinen et al.,
 Ideal $\tau$-tagging with TMVA multivariate data-analysis toolkit,
 Proceedings of International Conference on 
 Computing in High Energy and Nuclear Physics, CHEP'09,
