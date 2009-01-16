@@ -58,12 +58,9 @@ In addition to tracking history, version control tools allow
 one to merge contributions between several authors.
 % background
 Recently CERN has chosen to upgrade centralised CVS version control
-system to another modernised centralised system called Subversion (SVN) \cite{svnsite}.
+system \cite{cernsvn} to another modernised centralised system called Subversion (SVN) \cite{svnsite}.
 Unfortunately it does not offer the flexibility of the
 distributed systems we are interested in. 
-Git a distributed version control tool \cite{torvalds}, however, 
-provides this flexibility, 
-and can be used as a ``super client'' with the CERN SVN service.
 
 %%% The following minipage structures are needed to position the figure
 %%% beside the text paragraph.
@@ -71,6 +68,9 @@ and can be used as a ``super client'' with the CERN SVN service.
 
 \begin{minipage}{6cm}
 % git details
+Git, a distributed version control tool \cite{torvalds}, however, 
+provides this flexibility, 
+and can be used as a ``super client'' with the CERN SVN service.
 We discuss advantages of distributed version control tools,
 such as Git, over traditional centralised ones. 
 Most significat advantege is that the distributed
@@ -78,8 +78,7 @@ tools don't need a central server, and users can utilise
 version control locally on their own computers without
 heavy support infrastructure.
 % our case and example image
-We present example use case for Git (Fig.~1), 
-%developed by Linus Torvalds and the Linux kernel team, 
+We present an example use case for Git (Fig.~1), 
 together with CERN central SVN version control for high energy physics data
 analysis software maintenance~\cite{pk09aProceedings}.
 
@@ -104,25 +103,26 @@ performed during the development of the software.
 %%% The bibliography: the references are listed here.
 %%%
 \begin{thebibliography}{9}
+\bibitem{cernsvn}
+\href{http://cern.ch/svn}{CERN central SVN service (http://cern.ch/svn)}
+
+\bibitem{svnsite}
+\href{http://subversion.tigris.org}{Subversion website (http://subversion.tigris.org)}
+
 \bibitem{torvalds}
 L.~Tovalds with the Linux kernel team,
 Git Version Control System,
 \href{http://git-scm.com/}{http://git-scm.com/}
 
+%\bibitem{gitsite} % same as \bibitemtorvalds
+%\href{http://git.or.cz}{Git website (http://git.or.cz)}%
+
 \bibitem{pk09aProceedings}
 P.~Kaitaniemiemi and A.~Heikkinen et al.,
 Ideal $\tau$-tagging with TMVA multivariate data-analysis toolkit,
 Proceedings of International Conference on 
-Computing in High Energy and Nuclear Physics, CHEP'09,
+Computing in High Energy and Nuclear Physics, CHEP'09
 (To be published)
 
-\bibitem{gitsite}
-\url{http://git.or.cz}{Git website (http://git.or.cz)}
-
-\bibitem{svnsite}
-\href{http://subversion.tigris.org}{Subversion website (http://subversion.tigris.org)}
-
-\bibitem{cernsvn}
-\href{http://cern.ch/svn}{CERN central SVN service (http://cern.ch/svn)}
 \end{thebibliography}
 \end{document}
