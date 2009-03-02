@@ -32,6 +32,35 @@
     \maketitle
     \end{center}
     \vfill
+    \begin{abstract}
+Version control allows software developers to keep track of project history in
+a systematic and detailed manner. 
+%The project can be a data analysis or simulation program source code, 
+%or even LaTeX code of a paper or thesis. 
+In addition to tracking history, version control tools allow
+one to merge contributions between several authors.
+% background
+Recently CERN has chosen to upgrade centralised CVS version control
+system \cite{cernsvn} to another modernised centralised system called Subversion (SVN) \cite{svnsite}.
+Unfortunately it does not offer the flexibility of the
+distributed systems we are interested in. 
+
+Git, a distributed version control tool \cite{torvalds}, however, 
+provides this flexibility, 
+and can be used as a ``super client'' with the CERN SVN service.
+We discuss advantages of distributed version control tools,
+such as Git, over traditional centralised ones. 
+Most significant advantage is that the distributed
+tools don't need a central server, and users can utilise
+version control locally on their own computers without
+heavy support infrastructure.
+% our case and example image
+We present an example use case for Git in a HEP data analysis and publication writing project (Fig.~1)~\cite{pk09aProceedings}.
+We also demonstrate how to use Git
+together with CERN central SVN version control for high energy physics data
+analysis software maintenance.
+
+    \end{abstract}
     \begin{columns}[t]
       \begin{column}{0.45\linewidth}
 
