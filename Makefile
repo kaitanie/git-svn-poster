@@ -1,8 +1,12 @@
-all:
+all: poster
 	latex fp2009
 	latex fp2009
 	dvips -E -o fp2009.eps fp2009.dvi
 	ps2pdf fp2009.eps
+
+poster:
+	pdflatex poster.tex
+	pdflatex poster.tex
 
 clean_all:
 	rm -f  *.out *.pdf *.ps *.out
