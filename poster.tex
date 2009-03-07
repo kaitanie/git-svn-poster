@@ -68,8 +68,39 @@ analysis software maintenance.
     \begin{columns}[t]
       \begin{column}{0.45\linewidth}
 
-    \begin{block}{\large Abstract}
-      Distributed version control.
+    \begin{block}{\large What is version control?}
+      Benefits of version control for a project.
+      \begin{itemize}
+        \item Keep detailed record of all changes to the project.
+        \item Track author information
+        \item Merge contributions from several authors
+        \item 
+      \end{itemize}
+      Generally version control works best for \emph{text files}, such
+      as code or \LaTeX documents.
+    \end{block}
+
+    \begin{block}{\large Distributed version control}
+      Distributed version control means that there is no single server
+      that keeps track of all data. This has several benefits:
+      \begin{itemize}
+        \item No need for special server machine
+        \item Easy to set up:
+          \begin{enumerate}
+            \item {\tt mkdir myproject} \&\& {\tt cd myproject}
+            \item {\tt git init}
+          \end{enumerate}
+        \item Works locally on your own machine. Network is needed
+          only for sharing changes with collaborators.
+        \item High performance: local operations are fast!
+        \item Built for branching and merging:
+          \begin{itemize}
+            \item {\bf Branching:} Create additional line of
+              development for a new idea.
+            \item {\bf Merging:} Combine separate lines of development
+              together.
+          \end{itemize}
+      \end{itemize}
     \end{block}
 
     \begin{block}{\large Version history}
