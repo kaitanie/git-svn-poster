@@ -136,6 +136,24 @@ heavy support infrastructure.
 
 	\begin{block}{\large Git-SVN: bidirectional Git-SVN gateway}
 	  It is possible to fetch project revisions from SVN repository into a Git 
+          repository, work locally and when finished the local commits
+          can be pushed back to the central SVN repository.
+
+          Example:
+          \begin{itemize}
+            \item {\bf Clone from SVN:} {\tt mkdir root-svn \&\& cd root-svn \&\& git svn init https://svn.root.cern.ch/trunk}
+            \item {\bf Fetch all revisions:} {\tt git svn fetch}
+            \item Work locally creating a series of commits
+            \item {\bf Merge with the central repository:}
+              \begin{itemize}
+                \item {\bf Fetch new revisions:} {\tt git svn fetch}
+                \item {\bf Apply your commits on top of the central revisions:} {\tt git svn rebase}
+              \end{itemize}
+            \item {\bf Push your changes to the central repository:} {\tt git svn dcommit}
+          \end{itemize}
+
+          Git-SVN can also be used as an SVN-to-Git conversion tool
+          for groups that decide to completely switch to Git.
 	\end{block}
 
         \begin{block}{\large Workflows}
