@@ -41,6 +41,7 @@ Version control allows software developers to keep track of project history in
 a systematic and detailed manner. 
 %The project can be a data analysis or simulation program source code, 
 %or even LaTeX code of a paper or thesis. 
+
 In addition to tracking history, version control tools allow
 one to merge contributions between several authors.
 % background
@@ -52,17 +53,19 @@ distributed systems we are interested in.
 Git, a distributed version control tool \cite{torvalds}, however, 
 provides this flexibility, 
 and can be used as a ``super client'' with the CERN SVN service.
-We discuss advantages of distributed version control tools,
-such as Git, over traditional centralised ones. 
-Most significant advantage is that the distributed
+
+%We discuss advantages of distributed version control tools,
+%such as Git, over traditional centralised ones. 
+Most significant advantage of distributed version control is that the distributed
 tools don't need a central server, and users can utilise
 version control locally on their own computers without
 heavy support infrastructure.
 % our case and example image
-We present an example use case for Git in a HEP data analysis and publication writing project (Fig.~1)~\cite{pk09aProceedings}.
-We also demonstrate how to use Git
-together with CERN central SVN version control for high energy physics data
-analysis software maintenance.
+
+%We present an example use case for Git in a HEP data analysis and publication writing project (Fig.~1)~\cite{pk09aProceedings}.
+%We also demonstrate how to use Git
+%together with CERN central SVN version control for high energy physics data
+%analysis software maintenance.
 
     \end{abstract}
     \begin{columns}[t]
@@ -74,7 +77,7 @@ analysis software maintenance.
         \item Keep detailed record of all changes to the project.
         \item Track author information
         \item Merge contributions from several authors
-        \item 
+%        \item 
       \end{itemize}
       Generally version control works best for \emph{text files}, such
       as code or \LaTeX documents.
@@ -90,7 +93,7 @@ analysis software maintenance.
             \item {\tt mkdir myproject} \&\& {\tt cd myproject}
             \item {\tt git init}
           \end{enumerate}
-        \item Works locally on your own machine. Network is needed
+        \item Works locally on users own machine. Network is needed
           only for sharing changes with collaborators.
         \item High performance: local operations are fast!
         \item Built for branching and merging:

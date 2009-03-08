@@ -10,6 +10,8 @@ poster:
 
 clean_all:
 	rm -f  *.out *.pdf *.ps *.out
+ca:
+	rm -f  *.out *.pdf *.ps *.out
 
 gitClone:
 	git clone git@github.com:aatos/git-svn-poster.git
