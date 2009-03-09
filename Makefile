@@ -8,6 +8,10 @@ poster:
 	pdflatex poster.tex
 	pdflatex poster.tex
 
+upload: poster
+	chmod a+r poster.pdf
+	scp poster.pdf kaitanie@shell.dx.fi:~/public_html/doc/poster/fp09.pdf
+
 clean_all:
 	rm -f  *.out *.pdf *.ps *.out
 ca:
