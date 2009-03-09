@@ -140,6 +140,7 @@ users can utilise it locally without heavy support infrastructure.
           repository, work locally and when finished the local commits
           can be pushed back to the central SVN repository.
 
+\vspace{1cm}
           Example:
           \begin{itemize}
             \item {\bf Clone from SVN:} {\tt mkdir root-svn \&\& cd root-svn \&\& git svn init https://svn.root.cern.ch/trunk}
@@ -148,18 +149,20 @@ users can utilise it locally without heavy support infrastructure.
             \item {\bf Merge with the central repository:}
               \begin{itemize}
                 \item {\bf Fetch new revisions:} {\tt git svn fetch}
-                \item {\bf Apply your commits on top of the central revisions:} {\tt git svn rebase}
+                \item {\bf Apply commits on top of the central revisions:} {\tt git svn rebase}
               \end{itemize}
             \item {\bf Push your changes to the central repository:} {\tt git svn dcommit}
           \end{itemize}
 
+\vspace{1cm}
           Git-SVN can also be used as an SVN-to-Git conversion tool
           for groups that decide to completely switch to Git.
 	\end{block}
 
+\vspace{1cm}
         \begin{block}{\large Workflows}
-          \includegraphics[scale=1.00]{images/centralizedWorkflow.pdf}
-          \includegraphics[scale=1.00]{images/collaborativeDevelopmentWithMaintainer.pdf}
+          \includegraphics[scale=0.90]{images/centralizedWorkflow.pdf}
+          \includegraphics[scale=1.90]{images/collaborativeDevelopmentWithMaintainer.pdf}
         \end{block}
 %    \begin{block}{\large Fontsizes}
 %      \centering
