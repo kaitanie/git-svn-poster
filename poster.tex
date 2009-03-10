@@ -38,7 +38,7 @@
     \begin{columns}[t]
       \begin{column}{0.45\linewidth}
 
-    \begin{block}{\large Abstract}
+    \begin{block}{\large ABSTRACT}
       \vskip1cm
 Version control system (VCS) allows software developers to keep track of project history in
 a {\color{orange} systematic} and {\color{orange} detailed} manner. 
@@ -72,7 +72,7 @@ and can be used as a ``super client'' with the CERN SVN service.
 \end{block}
 
     \vskip2cm
-    \begin{block}{\large What is version control?}
+    \begin{block}{\large WHAT IS VERSION CONTROL?}
       \vskip1cm
       Benefits of version control for a physics software project include:
       \begin{itemize}
@@ -91,7 +91,7 @@ users can utilise it locally without heavy support infrastructure.
     \end{block}
 
     \vskip2cm
-    \begin{block}{\large Distributed version control}
+    \begin{block}{\large DISTRIBUTED VERSION CONTROL}
       \vskip1cm
       In distributed version control there is {\color{orange} no central server}
       that keeps track of all source code. This has several benefits.
@@ -119,19 +119,19 @@ users can utilise it locally without heavy support infrastructure.
     \end{block}
 
     \vskip2cm
-    \begin{block}{\large Version history}
+    \begin{block}{\large VERSION HISTORY}
       \vskip1cm
       \includegraphics[width=1.0\linewidth]{images/gitk-history-detail.png}
     \end{block}
 
     \vskip2cm
-    \begin{block}{\large Git GUI, graphical commit tool}
+    \begin{block}{\large GIT GUI, GRAPHICAL COMMIT TOOL}
     \vskip1cm
       \includegraphics[width=1.0\linewidth]{images/gui-screenshot-detail.png}
     \end{block}
 
     \vskip2cm
-    \begin{block}{\large Git GUI Blame}
+    \begin{block}{\large GIT GUI BLAME}
     \vskip1cm
       Find out who is responsible for each line of code/text. \emph{Unique
       feature of Git blame is that it can heuristically find similar
@@ -141,7 +141,7 @@ users can utilise it locally without heavy support infrastructure.
     \end{block}
 
     \vskip2cm
-    \begin{block}{\large Subversion at CERN}
+    \begin{block}{\large SUBVERSION AT CERN}
     \vskip1cm
       CERN has chosen Subversion revision control to replace its aging CVS based system.
     \end{block}
@@ -149,33 +149,33 @@ users can utilise it locally without heavy support infrastructure.
     \end{column}
       \begin{column}{0.45\linewidth}
 
-	\begin{block}{\large Git-SVN: bidirectional Git-SVN gateway}
+	\begin{block}{\large GIT-SVN: BIDIRECTIONAL GIT-SVN GATEWAY}
           \vskip1cm
-	  It is possible to fetch project revisions from SVN repository into a Git 
-          repository, work locally and when finished the local commits
-          can be pushed back to the central SVN repository.
+          Git-SVN gateway makes it possible to fetch project revisions from an SVN repository into a Git 
+          repository.
+          \vskip1cm
+          {\color{orange} Now all VCS functionality is available locally} and local commits can be pushed back to the central SVN repository (e.g.):
 
           \vskip1cm
-          Example:
           \begin{itemize}
-            \item {\bf Clone from SVN:} {\tt mkdir root-svn \&\& cd root-svn \&\& git svn init https://svn.root.cern.ch/trunk}
-            \item {\bf Fetch all revisions:} {\tt git svn fetch}
-            \item Work locally creating a series of commits
-            \item {\bf Merge with the central repository:}
-              \begin{itemize}
-                \item {\bf Fetch new revisions:} {\tt git svn fetch}
-                \item {\bf Apply commits on top of the central revisions:} {\tt git svn rebase}
-              \end{itemize}
-            \item {\bf Push your changes to the central repository:} {\tt git svn dcommit}
+            \item[\$] {\tt mkdir root-svn \&\& cd root-svn}
+            \item[\$] {\tt git svn init https://svn.root.cern.ch/trunk}
+            \item[\$] {\tt git svn fetch \ \ \# Fetch all revisions}
+              \vskip1cm
+            \item[\$] {\tt [...] \# Work locally, and merge with the central repository (CR):}
+              \vskip1cm
+            \item[\$] {\tt git svn fetch \ \ \# Fetch new revisions}
+            \item[\$] {\tt git svn rebase \ \# Apply commits on top of the CR}
+            \item[\$] {\tt git svn dcommit \# Push your changes to the CR}
           \end{itemize}
 
 \vspace{1cm}
-          Git-SVN can also be used as an SVN-to-Git conversion tool
-          for groups that decide to completely switch to Git.
+          Also, Git-SVN {\color{orange} can be used as an SVN-to-Git conversion tool}
+          for groups that decide to switch to Git.
 	\end{block}
 
 \vspace{2cm}
-        \begin{block}{\large Workflows}
+        \begin{block}{\large WORKFLOWS}
     \vskip1cm
           \includegraphics[scale=0.90]{images/centralizedWorkflow.pdf}
           \includegraphics[scale=1.90]{images/collaborativeDevelopmentWithMaintainer.pdf}
