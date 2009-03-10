@@ -40,8 +40,8 @@
 
     \begin{block}{\large Abstract}
       \vskip1cm
-Version control allows software developers to keep track of project history in
-a \emph{systematic} and \emph{detailed} manner. 
+Version control system (VCS) allows software developers to keep track of project history in
+a {\color{orange} systematic} and {\color{orange} detailed} manner. 
 %The project can be a data analysis or simulation program source code, 
 %or even LaTeX code of a paper or thesis. 
 Version control tool allows
@@ -51,7 +51,8 @@ This is a typical use-case for large projects in high energy physics.
 
 % background
 \vspace{1cm}
-Recently \emph{CERN has chosen} centralised system called Subversion (SVN) \cite{svnsite} \cite{cernsvn}.
+
+Recently {\color{orange} CERN has chosen centralised system called Subversion (SVN)} \cite{svnsite} \cite{cernsvn}.
 Unfortunately SVN does not offer the flexibility of the
 distributed systems we are interested in. 
 Git, a distributed version control tool \cite{torvalds}, however, 
@@ -73,17 +74,18 @@ and can be used as a ``super client'' with the CERN SVN service.
     \vskip2cm
     \begin{block}{\large What is version control?}
       \vskip1cm
-      Benefits of version control for a physics software project.
+      Benefits of version control for a physics software project include:
       \begin{itemize}
-        \item Keep detailed record of all changes to the project.
+        \item Possibility to keep detailed record of all changes
         \item Merge contributions from several authors and track author information
 %        \item 
       \end{itemize}
 
       \vskip1cm
-      Generally version control works best for \emph{text files}, such
-      as code or \LaTeX\ documents and
-most significant advantage of distributed version control is that 
+      Version control {\color{orange} works best for} text files, such as {\color{orange} source code} or \LaTeX\ documents.
+
+\vskip1cm
+The most significant advantage of distributed version control is that 
 users can utilise it locally without heavy support infrastructure.
 
     \end{block}
@@ -91,23 +93,26 @@ users can utilise it locally without heavy support infrastructure.
     \vskip2cm
     \begin{block}{\large Distributed version control}
       \vskip1cm
-      Distributed version control means that there is \emph{no single server}
-      that keeps track of all data. This has several benefits:
+      In distributed version control there is {\color{orange} no central server}
+      that keeps track of all source code. This has several benefits.
+      \vskip1cm
       \begin{itemize}
-        \item No need for special server machine
-        \item Easy to set up:
-          \begin{enumerate}
-            \item {\tt mkdir myproject} \&\& {\tt cd myproject}
-            \item {\tt git init}
-          \end{enumerate}
+        \item It is easy to set up (e.g.):
+          \begin{itemize}
+            \item[\$] {\tt mkdir myproject} \&\& {\tt cd myproject}
+            \item[\$] {\tt git init}
+          \end{itemize}
+          \vskip1cm
         \item Works locally on users machine and network is needed
           only for sharing changes with collaborators.
-        \item High performance: local operations are fast!
-        \item Built for branching and merging:
+          \vskip1cm
+        \item Distributed VCS offers high performance - all operations are local and fast.
+          \vskip1cm
+        \item They are {\color{orange} designed for easy branching and merging}:
           \begin{itemize}
-            \item {\bf Branching:} Create additional line of
+            \item Branching creates an additional line of
               development for a new idea.
-            \item {\bf Merging:} Combine separate development lines
+            \item Merging combines separate lines of development
               together.
           \end{itemize}
       \end{itemize}
@@ -116,13 +121,13 @@ users can utilise it locally without heavy support infrastructure.
     \vskip2cm
     \begin{block}{\large Version history}
       \vskip1cm
-      \includegraphics[scale=1.0]{images/gitk-history.png}
+      \includegraphics[width=1.0\linewidth]{images/gitk-history-detail.png}
     \end{block}
 
     \vskip2cm
     \begin{block}{\large Git GUI, graphical commit tool}
     \vskip1cm
-      \includegraphics[scale=1.0]{images/gui-screenshot-detail.png}
+      \includegraphics[width=1.0\linewidth]{images/gui-screenshot-detail.png}
     \end{block}
 
     \vskip2cm
