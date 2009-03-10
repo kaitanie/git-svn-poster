@@ -35,21 +35,24 @@
 \begin{document}
   \begin{frame}{} 
     \vfill
-    \begin{abstract}
+    \begin{columns}[t]
+      \begin{column}{0.45\linewidth}
+
+    \begin{block}{\large Abstract}
+      \vskip1cm
 Version control allows software developers to keep track of project history in
-a systematic and detailed manner. 
+a \emph{systematic} and \emph{detailed} manner. 
 %The project can be a data analysis or simulation program source code, 
 %or even LaTeX code of a paper or thesis. 
-In addition to tracking history, version control tools allow
-one to merge contributions between several authors.
+Version control tool allows
+merging contributions between several authors.
 This is a typical use-case for large projects in high energy physics.
 
 
 % background
-\vspace{2cm}
-Recently \emph{CERN has chosen to upgrade centralised CVS version control
-system \cite{cernsvn} to another modernised centralised system called Subversion (SVN)} \cite{svnsite}.
-Unfortunately it does not offer the flexibility of the
+\vspace{1cm}
+Recently \emph{CERN has chosen} centralised system called Subversion (SVN) \cite{svnsite} \cite{cernsvn}.
+Unfortunately SVN does not offer the flexibility of the
 distributed systems we are interested in. 
 Git, a distributed version control tool \cite{torvalds}, however, 
 provides this flexibility, 
@@ -65,10 +68,9 @@ and can be used as a ``super client'' with the CERN SVN service.
 %together with CERN central SVN version control for high energy physics data
 %analysis software maintenance.
 
-    \end{abstract}
-    \begin{columns}[t]
-      \begin{column}{0.45\linewidth}
+\end{block}
 
+    \vskip2cm
     \begin{block}{\large What is version control?}
       Benefits of version control for a physics software project.
       \begin{itemize}
